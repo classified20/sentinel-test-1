@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sentinel App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Sentinel Safety Console</h1>
+      <p class="subtitle">Live location, AI insights, risk evaluation, and device protection.</p>
+
+      <section class="card">
+        <h2>Live Location (Online/Offline)</h2>
+        <div id="location">Location: Not started</div>
+        <button id="start-location">Start Tracking</button>
+      </section>
+
+      <section class="card">
+        <h2>Movement Monitoring</h2>
+        <div id="movement">Movement: Unknown</div>
+        <button id="start-movement">Enable Movement Monitor</button>
+      </section>
+
+      <section class="card">
+        <h2>Bluetooth Monitoring</h2>
+        <div id="bluetooth">No Bluetooth device connected.</div>
+        <button id="scan-bluetooth">Scan Device</button>
+      </section>
+
+      <section class="card">
+        <h2>Risk Evaluation + AI Insight</h2>
+        <div id="risk-score">Risk Score: 0</div>
+        <div id="ai-insight">AI Insight: Waiting for sensor data...</div>
+      </section>
+
+      <section class="card">
+        <h2>Sentinel PIN Before Shutdown</h2>
+        <label for="pin">Set Sentinel PIN:</label>
+        <input id="pin" type="password" minlength="4" maxlength="8" placeholder="4-8 digit PIN" />
+        <button id="save-pin">Save PIN</button>
+        <div id="pin-status">PIN not set.</div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

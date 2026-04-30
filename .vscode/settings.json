@@ -1,0 +1,9 @@
+{
+  "files.exclude": {
+    "**/.git": true
+  },
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "liveServer.settings.port": 5500
+}
